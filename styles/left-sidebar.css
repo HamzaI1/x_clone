@@ -1,0 +1,305 @@
+  .left-sidebar {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    width: 315px;
+    overflow-y: auto;
+    scrollbar-width: auto; /* Firefox */
+    scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28); /* Firefox */
+  }
+  
+  /* Webkit scrollbar styles */
+  .left-sidebar::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .left-sidebar::-webkit-scrollbar-track {
+    background: #333; /* Track color */
+  }
+  
+  .left-sidebar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #333; /* Adds space around thumb */
+  }
+  
+  .left-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+  
+  .container {
+    display: grid;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .left-sidebar div {
+    color: rgb(209, 209, 209);
+  }
+  
+  .icon-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    height: 45px;
+    
+    justify-self: start;
+    padding: 2px 20px 2px 20px;
+    border-radius: 40px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  
+  .icon-name:hover {
+    background-color: rgb(26, 26, 26);
+  }
+  
+  .name {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+  .name1 {
+    font-weight: bold;
+  }
+  
+  .x-logo {
+    padding: 15px 20px 15px 20px;
+    justify-self: start;
+    margin-bottom: 1px;
+    border-radius: 50px;
+    
+    transition: background-color 0.15s;
+    cursor: pointer;
+  }
+  
+  .x-logo:hover {
+    background-color: rgb(26, 26, 26);
+  }
+  
+  .post-button {
+    padding: 18px 40px 18px 40px;
+    background-color: rgb(32, 147, 255);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  
+  .post-button:hover {
+    background-color: rgb(0, 130, 252);;
+  }
+  
+  .profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    padding: 12px 20px 8px 12px;
+    border-radius: 40px;
+    transition: background-color 0.15s;
+  }
+  
+  .container2:hover {
+    background-color:rgb(26, 26, 26);
+  }
+  
+  .profile-info {
+    margin-left: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  div .user-numbr {
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+  }
+  
+/* For screens 500px and above */
+@media (min-width: 500px) {
+  .left-sidebar {
+    width: 70px;
+  }
+
+  .container {
+    justify-content: flex-end;
+  }
+
+  .icon-name {
+    justify-content: flex-end;
+  }
+
+  .icon-name .name {
+    display: none;
+  }
+
+  .post-button {
+    display: block;
+    width: 50px; /* Make the button a square */
+    height: 50px; /* Same as width to make it round */
+    border-radius: 50%;
+    padding: 0; /* Remove padding */
+    margin: 10px auto; /* Center horizontally and add vertical margin */
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+  }
+
+  .container2 {
+    justify-content: flex-end;
+    align-items: center; /* Center vertically */
+    padding: 0; /* Adjust padding for spacing */
+    margin: 10px auto; /* Center horizontally and add vertical margin */
+  }
+
+  .profile-info {
+    display: none; /* Hide profile info text */
+  }
+
+  .profile-pic {
+    height: 50px; /* Same as button and icons */
+    width: 50px; /* Same as button and icons */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 633px) {
+  .left-sidebar {
+    width: 70px;
+  }
+}
+
+/* For screens between 500px and 1022px, sidebar stretches */
+@media (min-width: 634px) and (max-width: 721px) {
+  .left-sidebar {
+    width: 85px;
+  }
+}
+
+@media (min-width: 722px) and (max-width: 1021px) {
+  .left-sidebar {
+    width: calc(90px + (195 - 90) * ((100vw - 722px) / (1021 - 722)));
+  }
+}
+
+/* For screens between 1023px and 1296px, sidebar stretches */
+@media (min-width: 1022px) and (max-width: 1111px) {
+  .left-sidebar {
+    width: calc(80px + (135 - 80) * ((100vw - 1023px) / (1111 - 1022)));
+  }
+}
+
+
+@media (min-width: 1112px) and (max-width: 1298px) {
+  .left-sidebar {
+    width: calc(100px + (190 - 100) * ((100vw - 1112px) / (1298 - 1112)));
+  }
+}
+
+
+@media (min-width: 1299px) and (max-width: 1365px) {
+  .left-sidebar {
+    width: calc(285px + (311 - 285) * ((100vw - 1300px) / (1366 - 1299)));
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .icon-name .name {
+    display: inline; /* Show names for larger screens */
+  }
+
+  .post-button {
+    display: block;
+    width: auto;
+    height: auto;
+    border-radius: 35px;
+    padding: 18px 40px;
+    margin: 10px;
+    text-align: center;
+    line-height: normal; /* Reset line-height */
+  }
+
+  .container2 {
+    justify-content: flex-start;
+    align-items: center; /* Center vertically */
+    padding: 12px 20px 8px 12px; /* Reset padding */
+    margin: 10px auto; /* Center horizontally and add vertical margin */
+  }
+
+  .profile-info {
+    display: block; /* Show profile info text */
+  }
+
+  .profile-pic {
+    height: 40px; /* Original height */
+    width: 40px; /* Original width */
+    border-radius: 20px; /* Original border radius */
+    cursor: pointer;
+  }
+
+}
+
+
+@media (min-width: 1366px) {
+  .left-sidebar {
+    width: 312px; /* Original design width */
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .icon-name .name {
+    display: inline; /* Show names for larger screens */
+  }
+
+  .post-button {
+    display: block;
+    width: auto;
+    height: auto;
+    border-radius: 35px;
+    padding: 18px 40px;
+    margin: 10px;
+    text-align: center;
+    line-height: normal; /* Reset line-height */
+  }
+
+  .container2 {
+    justify-content: flex-start;
+    align-items: center; /* Center vertically */
+    padding: 12px 20px 8px 12px; /* Reset padding */
+    margin: 10px auto; /* Center horizontally and add vertical margin */
+  }
+
+  .profile-info {
+    display: block; /* Show profile info text */
+  }
+
+  .profile-pic {
+    height: 40px; /* Original height */
+    width: 40px; /* Original width */
+    border-radius: 20px; /* Original border radius */
+    cursor: pointer;
+  }
+}

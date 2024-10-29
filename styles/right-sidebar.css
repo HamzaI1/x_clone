@@ -1,0 +1,382 @@
+.right-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 436px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  z-index: 1;
+}
+
+.right-side-width {
+  width: 345px;
+  margin-right: 20px;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: border-color 0.15s;
+}
+
+.search-bar-container:focus-within {
+  border-color: rgb(69, 130, 201); /* Color of your choice */
+}
+
+.search-bar-input {
+  padding: 14px 14px;
+  background-color: rgb(34, 34, 34);
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  outline: none;
+}
+
+.search-bar-container button {
+  background-color: rgb(34, 34, 34);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12.5px;
+  padding-left: 18px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.search-bar-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.suggestions-profile-pics {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  transition: opacity 0.2s;
+}
+
+.profile-image-tooltip {
+  position: relative;
+}
+
+.profile-image-tooltip:hover .sugg-profile-tooltip{
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.suggestions-profile-pics:hover {
+  opacity: 0.9;
+}
+
+.seg1 {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+}
+
+.suggestion1:hover {
+  background-color: rgba(10, 10, 10, 0.9);
+}
+
+.big-might-like-container {
+  border: 1px solid rgb(56, 56, 56);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+.header-txt1 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.suggestion-profile-name {
+  margin-left: 8px;
+  line-height: 22px;
+}
+
+.suggment {
+  display: flex;
+}
+
+.sugg-profile {
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sugg-profile:hover .sugg-profile-tooltip {
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.sugg-profile-tooltip {
+  position: absolute;
+  bottom: -293px;
+  left: -61px;
+  z-index: 3;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 265px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+  visibility: hidden;
+  transition: visibility 0.4s;
+  cursor: auto;
+}
+
+.coinmarket {
+  bottom: -275px;
+}
+
+.pic-tooltip {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  transition: opacity 0.2;
+  cursor: pointer;
+}
+
+.pic-tooltip:hover {
+  opacity: 0.9;
+}
+
+.c-m {
+  border-radius: 5px;
+}
+
+.pic-button-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.button-tooltip {
+  border: none;
+  background-color: white;
+  color: rgb(29, 29, 29);
+  padding: 9px 17px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 18px;
+  transition: opacity 0.2;
+  cursor: pointer;
+  margin-top: -25px;
+}
+
+.button-tooltip:hover {
+  opacity: 0.85;
+}
+
+.button-tooltip:active {
+  opacity: 0.7;
+}
+
+.name-mark-flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.following-flexbox {
+  display: flex;
+  align-items: center;
+}
+
+div .desc {
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+div .sugg-user-tooltip {
+  color: rgb(109, 109, 109);
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.followers1 {
+  margin-left: 19px;
+}
+
+.followers, .following {
+  font-weight: normal;
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+}
+
+.following1, .followers1 {
+  font-size: 14px;
+}
+
+.follow {
+  cursor: pointer;
+}
+
+.follow:hover {
+  text-decoration: underline;
+}
+
+.sugg-profile:hover {
+  text-decoration: underline;
+}
+
+.x-badge {
+  height: 20px;
+  width: 20px;
+  margin-left: 2px;
+}
+
+.sugg-user {
+  color: rgb(109, 109, 109);
+  position: relative;
+}
+
+.sugg-user:hover .sugg-profile-tooltip {
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.follow-button {
+  border: none;
+  background-color: white;
+  color: rgb(10, 10, 10);
+  padding: 9px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: opacity 0.2;
+  cursor: pointer;
+}
+
+.follow-button:hover {
+  opacity: 0.85;
+}
+
+.follow-button:active {
+  opacity: 0.7;
+}
+
+.suggestions-profile-pics2 {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.suggestions-profile-pics2:hover {
+  opacity: 0.9;
+}
+
+.show-more {
+  color: rgb(69, 130, 201);
+  font-size: 15px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.show-more:hover {
+  background-color: rgba(10, 10, 10, 0.9);
+}
+
+a.suggestion-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 0; /* Remove any default padding */
+}
+
+.every-pic {
+  bottom: -270px;
+  left: -100px;
+}
+
+/* From 0 to 704px: Hide the sidebar */
+@media (max-width: 704px) {
+  .right-sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 705px) and (max-width: 1021px) {
+  .right-sidebar {
+    width: calc(0px + (201 - 0) * ((100vw - 705px) / (1021 - 705)));
+    background-color: black;
+  }
+
+  .right-side-width {
+    display: none;
+  }
+}
+
+@media (min-width: 1022px) and (max-width: 1111px) {
+  .right-sidebar {
+    width: calc(327px + (361 - 327) * ((100vw - 1022px) / (1111 - 1022)));
+  }
+
+  .right-side-width {
+    display: block;
+    width: 290px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1112px) and (max-width: 1298px) {
+  .right-sidebar {
+    width: calc(396px + (492 - 396) * ((100vw - 1112px) / (1298 - 1112)));
+  }
+
+  .right-side-width {
+    display: block;
+    width: 345px;
+    
+  }
+}
+
+@media (min-width: 1299px) and (max-width: 1366px) {
+  .right-sidebar {
+    width: calc(282px + (434.9 - 395) * ((100vw - 1112px) / (1366 - 1299)));
+  }
+
+  .right-side-width {
+    display: block;
+    width: 345px;
+  }
+}
